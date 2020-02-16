@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/gallery.js"></script>
+    <title>Create a New Event</title>
+</head>
+<body>
+   
+        <label for="eventType"><b>Event type: </b></label>
+        <select id="eventType" name="eventtype" required onchange="Dropbox()" required>
+                <option value="Choose one: ">Choose one:</option>
+                <option value="workshop">Workshop</option>
+                <option value="conference">Conference</option>
+                <option value="seminar">Seminar</option>
+        </select>
+          
+        <br>
+        <br> 
+
+        <label for="EventTitle"><b>Event Title: </b></label>
+        <input type="text" name="Event Title" id="eventTitle" required> 
+        
+        <br>
+        <br> 
+
+        <label for="eventDates"><b>Event Dates: </b></label>
+        <input type="date" name="Date from" id="eventDates" required>  <label for="to">to</label> 
+        <input type="date" name="date to" id="eventDates2" required>
+        
+        <br>
+        <br>
+
+        <label for="postingDates"><b>Posting Dates: </b></label>
+        <input type="date" name="Postdates" id="postingDates" required>
+    
+        <br>
+        <br>
+        <br>
+  
+        <input type="checkbox" name="check" id="checkReg" value="Check Registration">Is registration required?<br>      
+        <input type="checkbox" name="check" id="checkEvents" value="Check Events associated family">Is this event associated with any Family Programs?<br>      
+        <input type="checkbox" name="check" id="checkComp" value="Check Registration Completion Receive a Generative Email">Upon Registration Completion, Are Users to Receive an Auto Generated Email?<br>
+        <input type="checkbox" name="check" id="checkContacts" value="Check contacts">Is There a Point of Contact?<br>  
+        <input type="checkbox" name="check" id="checkHost" value="Check hosting commant point of contact">Is There a Hosting Command Point of Contact?<br>  
+        
+        <br>      
+        <br>
+    
+        <input type="submit" value="Save" onclick="Submit()">
+        <input type="button" value="Cancel">
+    
+</body>
+</html>
